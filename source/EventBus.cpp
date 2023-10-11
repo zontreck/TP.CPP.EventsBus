@@ -1,5 +1,7 @@
+
 #include "EventBus.h"
 #include "EventBusStatistics.h"
+#include "StatisticsUpdateEvent.h"
 
 // Define the methods for EventBus here.
 
