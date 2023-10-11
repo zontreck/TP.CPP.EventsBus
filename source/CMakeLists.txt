@@ -26,11 +26,17 @@ set(LIB_OUTPUT_DIR ${CMAKE_BINARY_DIR}/lib)
 
 file(COPY ${HEADERS} DESTINATION ${INCLUDE_OUTPUT_DIR})
 
-add_library(TP.CPP.EventsBus SHARED ${SOURCES})
+add_library(TPEventsBus SHARED ${SOURCES})
 
 
-set_target_properties(TP.CPP.EventsBus PROPERTIES ARCHIVE_OUTPUT_DIRECTORY ${LIB_OUTPUT_DIR})
-export(TARGETS TP.CPP.EventsBus FILE TP.CPP.EventsBusConfig.cmake)
+set_target_properties(TPEventsBus PROPERTIES ARCHIVE_OUTPUT_DIRECTORY ${LIB_OUTPUT_DIR})
+export(TARGETS TPEventsBus FILE TPEventsBusConfig.cmake)
 
-install (TARGETS TP.CPP.EventsBus DESTINATION /lib)
+install (
+    TARGETS TPEventsBus
+    LIBRARY lib
+    ARCHIVE lib
+    RUNTIME bin
+    EXPORT TPEventsBus
+)
 install (FILES ${HEADERS} DESTINATION /usr/include/tpeventbus)
