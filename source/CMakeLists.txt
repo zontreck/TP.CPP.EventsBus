@@ -34,9 +34,9 @@ export(TARGETS TPEventsBus FILE TPEventsBusConfig.cmake)
 
 install (
     TARGETS TPEventsBus
+    EXPORT TPEventsBus
     LIBRARY DESTINATION lib
     ARCHIVE DESTINATION lib
     RUNTIME DESTINATION bin
-    EXPORT TPEventsBus
 )
 install (FILES ${HEADERS} DESTINATION /usr/include/tpeventbus)
