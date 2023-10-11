@@ -26,15 +26,15 @@ set(LIB_OUTPUT_DIR ${CMAKE_BINARY_DIR}/lib)
 
 file(COPY ${HEADERS} DESTINATION ${INCLUDE_OUTPUT_DIR})
 
-add_library(TPEventsBus STATIC ${SOURCES})
+add_library(tpeventsbus STATIC ${SOURCES})
 
 
-set_target_properties(TPEventsBus PROPERTIES ARCHIVE_OUTPUT_DIRECTORY ${LIB_OUTPUT_DIR})
-export(TARGETS TPEventsBus FILE TPEventsBusConfig.cmake)
+set_target_properties(tpeventsbus PROPERTIES ARCHIVE_OUTPUT_DIRECTORY ${LIB_OUTPUT_DIR})
+export(TARGETS tpeventsbus FILE tpeventsbusConfig.cmake)
 
 install (
-    TARGETS TPEventsBus
-    EXPORT TPEventsBus
+    TARGETS tpeventsbus
+    EXPORT tpeventsbus
     LIBRARY DESTINATION lib/tpeventsbus
     ARCHIVE DESTINATION lib/tpeventsbus
     RUNTIME DESTINATION bin/tpeventsbus
