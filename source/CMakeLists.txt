@@ -29,4 +29,4 @@ set_target_properties(TP.CPP.EventsBus PROPERTIES ARCHIVE_OUTPUT_DIRECTORY ${LIB
 export(TARGETS TP.CPP.EventsBus FILE TP.CPP.EventsBusConfig.cmake)
 
 install (TARGETS TP.CPP.EventsBus DESTINATION /usr/local/lib)
-install (FILES ${HEADERS} DESTINATION /usr/local/include)
+install (FILES ${HEADERS} DESTINATION /usr/local/include/tpeventbus)
