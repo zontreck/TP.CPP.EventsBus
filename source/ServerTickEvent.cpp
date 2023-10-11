@@ -3,7 +3,7 @@
 
 ServerTickEvent::ServerTickEvent()
 {
-    
+    setName("Server Tick Event");
 }
 
 bool ServerTickEvent::post()

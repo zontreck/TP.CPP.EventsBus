@@ -5,7 +5,7 @@
 
 StatisticsUpdateEvent::StatisticsUpdateEvent()
 {
-    
+    setName("Statistics Update Event");
 }
 
 

@@ -1,6 +1,8 @@
 #ifndef EVENT_H
 #define EVENT_H
 
+#include <string>
+
 class Event {
 public:
     Event();
@@ -10,10 +12,13 @@ public:
     bool isCancelled() const;
     void setCancellable(bool cancel);
     virtual bool post() = 0;
+    void setName(std::string newName);
+    std::string getName();
 
 private:
     bool cancelled;
     bool cancellable;
+    std::string name;
 };
 
 enum class Priority : int {

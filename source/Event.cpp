@@ -1,7 +1,9 @@
 #include "Event.h"
+#include <string>
 
 Event::Event()
 {
+    setName("Null Event");
 }
 
 bool Event::isCancellable() const {
@@ -24,4 +26,14 @@ bool Event::isCancelled() const {
 void Event::setCancellable(bool cancel)
 {
     cancellable = cancel;
+}
+
+void Event::setName(std::string newName)
+{
+    name = newName;
+}
+
+std::string Event::getName()
+{
+    return name;
 }
