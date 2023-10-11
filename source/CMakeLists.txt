@@ -26,7 +26,7 @@ set(LIB_OUTPUT_DIR ${CMAKE_BINARY_DIR}/lib)
 
 file(COPY ${HEADERS} DESTINATION ${INCLUDE_OUTPUT_DIR})
 
-add_library(TP.CPP.EventsBus ${SOURCES})
+add_library(TP.CPP.EventsBus SHARED ${SOURCES})
 
 
 set_target_properties(TP.CPP.EventsBus PROPERTIES ARCHIVE_OUTPUT_DIRECTORY ${LIB_OUTPUT_DIR})
