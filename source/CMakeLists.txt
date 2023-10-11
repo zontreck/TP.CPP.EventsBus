@@ -8,6 +8,7 @@ find_package(PkgConfig REQUIRED)
 set(SOURCES
     Event.cpp
     EventBus.cpp
+    EventBusStatistics.cpp
     ServerTickEvent.cpp
     StatisticsUpdateEvent.cpp
 )
@@ -15,6 +16,7 @@ set(SOURCES
 set(HEADERS
     Event.h
     EventBus.h
+    EventBusStatistics.h
     ServerTickEvent.h
     StatisticsUpdateEvent.h
 )
