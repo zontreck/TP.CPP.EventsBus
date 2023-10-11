@@ -9,12 +9,14 @@ set(SOURCES
     Event.cpp
     EventBus.cpp
     ServerTickEvent.cpp
+    StatisticsUpdateEvent.cpp
 )
 
 set(HEADERS
     Event.h
     EventBus.h
     ServerTickEvent.h
+    StatisticsUpdateEvent.h
 )
 
 set(INCLUDE_OUTPUT_DIR ${CMAKE_BINARY_DIR}/includes)
